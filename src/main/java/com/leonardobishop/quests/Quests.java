@@ -171,6 +171,12 @@ public class Quests extends JavaPlugin {
                 taskTypeManager.registerTaskType(new PlaceholderAPIEvaluateTaskType());
             }
 
+            // START harvester hoe change
+            if(Bukkit.getPluginManager().isPluginEnabled("HarvesterHoes")) {
+                taskTypeManager.registerTaskType(new HarvesterHoeTaskType());
+            }
+            // END harvester hoe change
+
             taskTypeManager.closeRegistrations();
             reloadQuests();
             if (!questsConfigLoader.getBrokenFiles().isEmpty()) {

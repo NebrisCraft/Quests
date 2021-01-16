@@ -138,6 +138,15 @@
             <type>jar</type>
             <scope>provided</scope>
         </dependency>
+
+        <!-- Nebris' Harvester Hoe Plugin -->
+        <dependency>
+            <groupId>me.elapsed.plugin</groupId>
+            <artifactId>harvester</artifactId>
+            <version>1.0-SNAPSHOT_63</version>
+            <scope>system</scope>
+            <systemPath>Put your file path here (redacted)</systemPath>
+        </dependency>
     </dependencies>
 
     <build>
